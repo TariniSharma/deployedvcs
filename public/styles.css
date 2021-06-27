@@ -1,0 +1,114 @@
+body
+{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:gainsboro;
+    color:black;
+}
+
+#container
+{
+    width: 100%;
+    height: calc(100vh);
+    display:flex;
+    justify-content:space-evenly;
+    overflow: hidden;
+}
+
+#activeUsers
+{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+#conferenceArea
+{
+    width: 80%;
+    height:100%;
+}
+
+
+#activeUsersHeading
+{
+    margin: 20px 0 0 0;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 1px solid #cddfe7;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#conferenceAreaHeading
+{
+    margin: 20px 0 0 0;
+    padding-left: 400px;
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#remoteUserVideo
+{
+    position: fixed;
+    border: 1px solid #cddfe7;
+    bottom: 30%;
+    right: 10%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 25%;
+}
+
+#localUserVideo 
+{
+    position: fixed;
+    border: 1px solid #cddfe7;
+    bottom: 30%;
+    right: 50%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 25%;
+}
+
+#remoteUserHeading
+{
+    position: fixed;
+    top: 25%;
+    right: 20%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#localUserHeading
+{
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.active-user 
+{
+    padding: 10px 30px;
+    border-bottom: 1px solid #cddfe7;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.active-user:hover 
+{
+    background-color: #e8e9eb;
+    transition: background-color 0.5s ease;
+}
+  
+.active-user--selected 
+{
+    background-color: #fff;
+    border-right: 5px solid #65a9e5;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
