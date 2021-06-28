@@ -1,3 +1,4 @@
 # deployedvcs
 
-## basic local machine stream taking
+## basic local-remote machine stream taking
+
