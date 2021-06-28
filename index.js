@@ -4,7 +4,7 @@ const app = express();
 
 let port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static(path.join(__dirname, "./public")));
 
 app.get("/", (req,res) => {
     options = {root: path.join(__dirname, "./public")};
