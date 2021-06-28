@@ -9,22 +9,31 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
     </head>
     <body>
-        <div id = "container">
-            <div id = "activeUsers">
-              <h4 id="activeUsersHeading"> Users Panel</h4>
-            </div>
-            <div id = "conferenceArea">
-              <h4 id="conferenceAreaHeading"> Conference Panel</h4>
-              <div id = "localUserHeading">
-                <h6> Local User </h6>
-              </div>
-              <div id = "remoteUserHeading">
-                <h6> Remote User</h6>
-              </div>
-              <video muted id = "localUserVideo" autoPlay></video>
-              <video muted id = "remoteUserVideo" autoPlay></video>
-            </div>
+      <div id = "container">
+        <div id = "activeUsers">
+          <h4 id="activeUsersHeading"> Users Panel</h4>
+        </div>
+        <div id = "conferenceArea">
+          <h4 id="conferenceAreaHeading"> Conference Panel</h4>
+          <div id = "localUserHeading">
+            <h6> Local User </h6>
           </div>
+          <div id = "remoteUserHeading1">
+            <h6> Remote User 1</h6>
+          </div>
+          <div id = "remoteUserHeading2">
+            <h6> Remote User 2</h6>
+          </div>
+          <div id = "remoteUserHeading3">
+            <h6> Remote User 3</h6>
+          </div>
+          <video id = "localUserVideo" autoPlay></video>
+          <video id = "remoteUserVideo1" autoPlay></video>
+          <video id = "remoteUserVideo2" autoPlay></video>
+          <video id = "remoteUserVideo3" autoPlay></video>
+          <!-- <video muted id = "remoteUserVideo4" autoPlay></video> -->
+        </div>
+      </div>
           <script src = "scripts/index.js"></script>
     </body>
 </html>

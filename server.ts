@@ -69,6 +69,19 @@ export class Server
                     });
                 });
 
+                socket.on("connect-to-others", (data:any) => {
+                    socket.to(data.to).emit("connecting-to-others", {
+                        currentInCall : data.currentInCall,
+                        socket : socket.id
+                    });
+                });
+
+                socket.on("housekeep", data => {
+                    socket.to(data.from).emit("housekeeped", {
+                        socket : socket.id
+                    });
+                });
+
                 socket.on("make-answer", data => {
                     socket.to(data.to).emit("answer-made", {
                         socket : socket.id,

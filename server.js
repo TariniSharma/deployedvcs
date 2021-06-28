@@ -58,6 +58,17 @@ var Server = /** @class */ (function () {
                     socket: socket.id
                 });
             });
+            socket.on("connect-to-others", function (data) {
+                socket.to(data.to).emit("connecting-to-others", {
+                    currentInCall: data.currentInCall,
+                    socket: socket.id
+                });
+            });
+            socket.on("housekeep", function (data) {
+                socket.to(data.from).emit("housekeeped", {
+                    socket: socket.id
+                });
+            });
             socket.on("make-answer", function (data) {
                 socket.to(data.to).emit("answer-made", {
                     socket: socket.id,

@@ -51,33 +51,73 @@ body
     border-bottom: 1px solid black;
 }
 
-#remoteUserVideo
+#remoteUserVideo1
 {
     position: fixed;
     border: 1px solid #cddfe7;
-    bottom: 30%;
-    right: 10%;
+    bottom: 60%;
+    right: 20%;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    width: 25%;
+    width: 15%;
+}
+
+#remoteUserVideo2
+{
+    position: fixed;
+    border: 1px solid #cddfe7;
+    bottom: 20%;
+    right: 60%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 15%;
+}
+
+#remoteUserVideo3
+{
+    position: fixed;
+    border: 1px solid #cddfe7;
+    bottom: 20%;
+    right: 20%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 15%;
 }
 
 #localUserVideo 
 {
     position: fixed;
     border: 1px solid #cddfe7;
-    bottom: 30%;
-    right: 50%;
+    bottom: 60%;
+    right: 60%;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    width: 25%;
+    width: 15%;
 }
 
-#remoteUserHeading
+#remoteUserHeading1
 {
     position: fixed;
-    top: 25%;
-    right: 20%;
+    bottom: 80%;
+    right: 25%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#remoteUserHeading2
+{
+    position: fixed;
+    bottom: 40%;
+    right: 65%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#remoteUserHeading3
+{
+    position: fixed;
+    bottom: 40%;
+    right: 25%;
     font-weight: 500;
     font-size: 18px;
 }
@@ -85,8 +125,8 @@ body
 #localUserHeading
 {
     position: fixed;
-    top: 25%;
-    left: 35%;
+    bottom: 80%;
+    right: 65%;
     font-weight: 500;
     font-size: 18px;
 }
