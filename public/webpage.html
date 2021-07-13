@@ -4,27 +4,51 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Testing something</title>
+        <title>Video-Call Application</title>
+        <!--stylesheet & bootstrap links -->
         <link rel = "stylesheet" href = "styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
     </head>
     <body>
-        <div id = "container">
-            <div id = "activeUsers">
-              <h4 id="activeUsersHeading"> Users Panel</h4>
+      <div class="maincontainer">
+        <div class = "container">
+          <div class="header">
+            
+          </div>
+          <div class = "row">
+            <div class = "col-md-10">
+              <div class="embed-responsive embed-responsive-16by9">
+                <video class = "vid" id = "localUserVideo" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo1" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo2" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo3" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo4" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo5" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo6" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo7" autoPlay playsinline></video>
+                <video class = "vid" id = "remoteUserVideo8" autoPlay playsinline></video>
+              </div>
+
+              <div class="buttons">
+                <button type="button" class="btn btn-outline-secondary" id="localUserAudioButton" data-bs-toggle="button" autocomplete="off"><img src=" https://cdn3.iconfinder.com/data/icons/glypho-music-and-sound/64/microphone-off-512.png"></button>
+                <button type="button" class="btn btn-outline-secondary" id="localUserVideoButton" data-bs-toggle="button" autocomplete="off"><img src="https://cdn.icon-icons.com/icons2/2449/PNG/512/cideo_camera_off_icon_148833.png"></button>
+              </div>
             </div>
-            <div id = "conferenceArea">
-              <h4 id="conferenceAreaHeading"> Conference Panel</h4>
-              <div id = "localUserHeading">
-                <h6> Local User </h6>
+
+            <div class = "col-md-2">
+              <div id = "activeUsers">
+                <h4>Active Users</h4>
               </div>
-              <div id = "remoteUserHeading">
-                <h6> Remote User</h6>
-              </div>
-              <video muted id = "localUserVideo" autoPlay></video>
-              <video muted id = "remoteUserVideo" autoPlay></video>
             </div>
           </div>
-          <script src = "scripts/index.js"></script>
+          <div class="footer">
+          
+          </div>
+        </div>
+      </div>
+
+      <script src = "scripts/index.js"></script>
     </body>
 </html>
