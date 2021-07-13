@@ -1,3 +1,3 @@
 # deployedvcs
 
-## basic local machine stream taking
+## basic application where user can see local stream
