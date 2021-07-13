@@ -1,5 +1,5 @@
 # deployedvcs
 
-## basic local-remote machine stream taking
+## basic application with local-remote stream enabled
 
-fully deployable web application with upto 4 user interaction
+fully deployable web application where upto 4 users can interaction
