@@ -1,13 +1,13 @@
-#Video-Call Application
+# Video-Call Application
 
-##Overview
+## Overview
 Implemented a multi-user responsive video interaction system where
 User can log into the system (user authentication)
 User is directed to a meeting room
 User can interact with the active users
 User has in-meet audio/video controls
 
-##Technologies used
+## Technologies used
 Frontend: 
 (1) React
 (2) Bootstrap
